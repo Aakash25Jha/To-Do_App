@@ -17,7 +17,7 @@ div{
 <title>My Page</title>
 </head>
 <body>
-Hi! ${name}
+Hi! ${name} your password is ${password}<b>
 <div>
 WELCOME
 </div>

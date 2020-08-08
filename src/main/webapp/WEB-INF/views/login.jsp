@@ -28,7 +28,7 @@ background-color:yellow;}
 Hi! ${name}
 <br><label>${err}</label>
 <div>
-<form action"/login.do" method="POST">
+<form action"/spring-mvc/login" method="POST">
 <label for="name">Enter Your Name:</label>
 <input type="text" id="name" name="name"/></br></br>
 <label for="password">Enter Your Password:</label>
