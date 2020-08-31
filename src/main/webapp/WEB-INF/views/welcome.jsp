@@ -1,25 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body{
-position:absolute;
-padding:10px;
-left:50px;}
-div{
- width: 500px;
- clear: both;
-}
-</style>
-<meta charset="ISO-8859-1">
-<title>My Page</title>
-</head>
-<body>
-Hi! ${name} your password is ${password}<b>
-<div>
-WELCOME
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
+<div class="container">
+<h2>HI ${name} , how are you mate!</h2>
+<strong><p>Here is the list of <a href="/list-todos">To-Do's for you</a></p></strong>
 </div>
-</body>
-</html>
+<%@ include file="common/footer.jspf" %>
