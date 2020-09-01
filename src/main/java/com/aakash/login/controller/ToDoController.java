@@ -2,6 +2,7 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.management.RuntimeErrorException;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,8 +50,9 @@ ToDoService service;
 	}
 	@RequestMapping(value="/add-todo",method=RequestMethod.GET)
 	public String addToDo(ModelMap model){
-		model.addAttribute("todo", new ToDo());
-		return "todo";
+		throw new RuntimeException( "Dummy Exception");
+		/*model.addAttribute("todo", new ToDo());
+		return "todo";*/
 	}
 	@RequestMapping(value="/add-todo",method=RequestMethod.POST)
 	public String addToDoPost(ModelMap model,@Valid @ModelAttribute("todo") ToDo todo,BindingResult result){

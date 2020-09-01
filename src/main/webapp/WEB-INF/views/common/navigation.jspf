@@ -17,7 +17,7 @@
 			<li><a href="/list-todos">Todos</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-		<a href="/logout">Logout</a>
+		<li><a href="/logout">Logout</a></li>
 		</ul>
 	</div>
 </nav>
